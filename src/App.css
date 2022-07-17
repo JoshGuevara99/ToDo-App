@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.navbar {
+	margin: -10px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	background-color: lightblue;
+	border-bottom: solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-box {
+	height: 4vh;
+	font-size: large;
+}
+.add-button {
+	height: 5vh;
+	background-color: #84f2fa;
+	color: #074d52;
+	border-color: #074d52;
+	font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+	justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-body {
+	margin-top: 14px;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-container {
+	text-transform: capitalize;
+	font-size: 17px;
+	display: flex;
+	border: solid 2px;
+	padding: 5px;
+	border-radius: 8px;
+	border-color: #362f2f;
+	margin-top: 10px;
+}
+.edit-button {
+	margin-right: 15px;
+	background-color: #9cc2e5;
+	color: #162cf5;
+	font-size: medium;
+	border-color: #162cf5;
+	border-radius: 4px;
+}
+.delete-button {
+	background-color: #f28f8f;
+	color: #a80f0f;
+	border-color: #a80f0f;
+	border-radius: 4px;
+	font-size: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel-button {
+	background-color: #f28f8f;
+	color: #a80f0f;
+	border-color: #a80f0f;
+	border-radius: 4px;
+	font-size: medium;
+	margin-right: 15px;
+}
+
+.submit-button {
+	background-color: #96e0a3;
+	color: #076b18;
+	font-size: medium;
+	border-color: #076b18;
+	border-radius: 4px;
+}
+
+.right-action-buttons {
+	margin-left: auto;
+	padding-right: 10px;
+}
+
+.edit-container {
+	display: flex;
+	border: solid 2px;
+	padding: 5px;
+	border-radius: 8px;
+	border-color: #362f2f;
+	margin-top: 10px;
 }
