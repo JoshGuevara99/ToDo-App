@@ -77,11 +77,12 @@ function App() {
 			{/*Todo Item map list*/}
 			{todoList.map((item) => {
 				return (
-					<div>
+					<div className="container">
 						{todoToEdit == item.id ? (
 							//EDITING MODE
-							<div className="edit-container">
+							<div className="todo-container">
 								<input
+									className="edit-input"
 									type="text"
 									value={editedText}
 									onChange={(e) => {
@@ -94,14 +95,14 @@ function App() {
 										onClick={() => {
 											setTodoToEdit(null);
 										}}>
-										Cancel Edit
+										Cancel
 									</button>
 									<button
 										className="submit-button"
 										onClick={() => {
 											submitEdit(item.id);
 										}}>
-										Submit Edit
+										Submit
 									</button>
 								</div>
 							</div>

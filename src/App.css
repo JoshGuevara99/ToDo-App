@@ -3,25 +3,44 @@
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	height: 100%;
+	height: 10vh;
 	background-color: lightblue;
 	border-bottom: solid;
 }
 
 .input-box {
 	height: 4vh;
-	font-size: large;
+	font-size: 1rem;
 }
 .add-button {
 	height: 5vh;
 	background-color: #84f2fa;
 	color: #074d52;
 	border-color: #074d52;
-	font-size: large;
+	font-size: 0.9rem;
 }
 
-.app {
-	justify-content: center;
+@media (max-height: 400px) {
+	.add-button {
+		margin-top: 2px;
+		height: 20px;
+	}
+	.input-box {
+		margin-top: 2px;
+		height: 14px;
+	}
+}
+
+@media (min-width: 330px) {
+	.input-box {
+		padding-left: 12apx;
+	}
+}
+
+.edit-input {
+	box-sizing: border-box;
+	height: 103%;
+	width: 30vh;
 }
 
 .form-body {
@@ -33,17 +52,19 @@
 }
 
 .todo-container {
+	height: 3.6vh;
 	text-transform: capitalize;
 	font-size: 17px;
 	display: flex;
 	border: solid 2px;
-	padding: 5px;
+	padding: 1vh;
 	border-radius: 8px;
 	border-color: #362f2f;
-	margin-top: 10px;
+	margin-top: 3vh;
 }
 .edit-button {
-	margin-right: 15px;
+	margin-right: 1vw;
+	margin-left: auto;
 	background-color: #9cc2e5;
 	color: #162cf5;
 	font-size: medium;
@@ -51,6 +72,7 @@
 	border-radius: 4px;
 }
 .delete-button {
+	margin-left: auto;
 	background-color: #f28f8f;
 	color: #a80f0f;
 	border-color: #a80f0f;
@@ -59,12 +81,13 @@
 }
 
 .cancel-button {
+	margin-left: auto;
 	background-color: #f28f8f;
 	color: #a80f0f;
 	border-color: #a80f0f;
 	border-radius: 4px;
 	font-size: medium;
-	margin-right: 15px;
+	margin-right: 1vh;
 }
 
 .submit-button {
@@ -77,14 +100,15 @@
 
 .right-action-buttons {
 	margin-left: auto;
-	padding-right: 10px;
 }
 
-.edit-container {
-	display: flex;
-	border: solid 2px;
-	padding: 5px;
-	border-radius: 8px;
-	border-color: #362f2f;
-	margin-top: 10px;
+@media (min-height: 800px) {
+	.input-box {
+		margin-top: 1vh;
+		height: 3.3vh;
+	}
+	.add-button {
+		margin-top: 1vh;
+		height: 4vh;
+	}
 }
